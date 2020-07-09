@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = "HHConvenience"
-    s.version           = "0.0.3"
+    s.version           = "0.0.4"
     s.summary           = "Reusable Swift code for my personal projects."
 
 
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.subspec "About" do |p|
         p.ios.deployment_target = "11.0"
         p.ios.source_files = "Convenience/About/*.{swift,xib}"
-        p.ios.dependency "Convenience/Tables"
+        p.ios.dependency "HHConvenience/Tables"
     end
     s.subspec "Alerts" do |p|
         p.ios.deployment_target = "11.0"
@@ -31,18 +31,15 @@ Pod::Spec.new do |s|
     end
     s.subspec "InApp" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.source_files = "Convenience/InApp/*.{swift,xib}"
         p.frameworks = "StoreKit"
     end
     s.subspec "Keychain" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.source_files = "Convenience/Keychain/*.{swift,xib}"
     end
     s.subspec "Misc" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.source_files = "Convenience/Misc/*.{swift,xib}"
     end
     s.subspec "Options" do |p|
@@ -51,12 +48,10 @@ Pod::Spec.new do |s|
     end
     s.subspec "Persistence" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.source_files = "Convenience/Persistence/*.{swift,xib}"
     end
     s.subspec "Reviewer" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.source_files = "Convenience/Reviewer/*.{swift,xib}"
     end
     s.subspec "Tables" do |p|
@@ -65,7 +60,6 @@ Pod::Spec.new do |s|
     end
     s.subspec "WebServices" do |p|
         p.ios.deployment_target = "11.0"
-        p.osx.deployment_target = "10.11"
         p.dependency "SwiftyBeaver"
         p.source_files = "Convenience/WebServices/*.{swift,xib}"
     end
