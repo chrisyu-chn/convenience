@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-    s.name              = "Convenience"
-    s.version           = "0.0.2"
+    s.name              = "HHConvenience"
+    s.version           = "0.0.3"
     s.summary           = "Reusable Swift code for my personal projects."
 
 
